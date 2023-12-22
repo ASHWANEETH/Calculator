@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="display" name="" id="display">
+      <div class="button-container">
+
+        <button class="C" onclick="key=''; document.querySelector('#display').value=key;">C</button>
+        <button onclick="key+='/'; document.querySelector('#display').value=key;">/</button>
+        <button onclick="key+='*'; document.querySelector('#display').value=key;">*</button>
+        <button onclick="key+='7'; document.querySelector('#display').value=key;">7</button>
+        <button onclick="key+='8'; document.querySelector('#display').value=key;">8</button>
+        <button onclick="key+='9'; document.querySelector('#display').value=key;">9</button>
+        <button onclick="key+='4'; document.querySelector('#display').value=key;">4</button>
+        <button onclick="key+='5'; document.querySelector('#display').value=key;">5</button>
+        <button onclick="key+='6'; document.querySelector('#display').value=key;">6</button>
+        <button onclick="key+='1'; document.querySelector('#display').value=key;">1</button>
+        <button onclick="key+='2'; document.querySelector('#display').value=key;">2</button>
+        <button onclick="key+='3'; document.querySelector('#display').value=key;">3</button>
+        <button onclick="key+='+'; document.querySelector('#display').value=key;">+</button>
+        <button onclick="key+='-'; document.querySelector('#display').value=key;">-</button>
+        <button class="eq" onclick="key=document.querySelector('#display').value;; document.querySelector('#display').value=eval(key);">=</button>
+        <button onclick="key+='0'; document.querySelector('#display').value=key;">0</button>
+        <button onclick="key+='.'; document.querySelector('#display').value=key;">.</button>
+      </div>
+    </div>
+
+    <script>
+      let key='';
+      document.querySelector('#display').value=key;
+    </script>
+  </body>
+</html>
